@@ -19,6 +19,6 @@ int main()
 	decrypt(data);
 
 	for (size_t i = 0; i < sizeof(data); i++)
-		printf("%.2X ", data[i] & 0xff);
+		printf("%.2X ", data[i] & 0xff);  // Have to mask chars with 0xff when printing or some buggy versions of printf will trash the formatting
 }
 
