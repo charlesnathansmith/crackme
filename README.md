@@ -2,7 +2,7 @@
 
 This is a walk-through solving a crackme written by reddit user [u/CaptainMeatloaf](https://www.reddit.com/user/CaptainMeatloaf/).
 
-The original post is available [here](https://www.reddit.com/r/ReverseEngineering/comments/13xhkfg/another_small_re_challenge/), which includes some comments about getting the crackme up an running in a Raspberry Pi emulator, with the actual crackme and instructions hosted [here](https://hunter2.watchingyour.tv/crackme.html).
+The original post is available [here](https://www.reddit.com/r/ReverseEngineering/comments/13xhkfg/another_small_re_challenge/), which includes some comments about getting the crackme up and running in a Raspberry Pi emulator, with the actual crackme and instructions hosted [here](https://hunter2.watchingyour.tv/crackme.html).
 
 # here we go
 Once we get everything set up, we can try random words:
