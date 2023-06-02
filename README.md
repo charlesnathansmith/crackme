@@ -155,7 +155,7 @@ Which as messy as it looks, really just calculates a function pointer, calls tha
 
 local_10 is defined as 0xa4, so the address of the function being called is (local_14 + 0xa4 - 0x84) = (local_14 + 0x20)
 
-To make a long story short, mmap() is similar to VirtualAlloc in Windows, and allocates memory with certain permissions.  local_14 stores the pointer to this memory, and 0x2e0 bytes are copied into it from DAT_0003c1fc.  local_14 is then used as the argument to our decryption sub_11218 (Ah-hah!), so those bytes get decrypted, then a call is made to local_14+0x20, and the return value determines which message to give.
+To make a long story short, mmap() is similar to VirtualAlloc in Windows, and allocates memory with certain permissions.  local_14 stores the pointer to this memory, and 0x2e0 bytes are copied into it from DAT_0003c1fc.  local_14 is then used as the argument to our decryption sub_11218 (Ah-hah!), so those bytes get decrypted (up to the first null anyway,) then a call is made to local_14+0x20, and the return value determines which message to give.
 
 Let's copy 0x2e0 bytes starting at DAT_0003c1fc (0x3c1fc) over to our decryptor and see what it gives us:
 
