@@ -133,7 +133,7 @@ Here's a cleaned up implementation that tests it using the encrypted output mess
 
 [dec1.cpp](https://github.com/charlesnathansmith/crackme/blob/main/dec1.cpp)
 
-Those output looks correct, including the garbage chars printed after the failure notice.
+Those outputs look correct, including the garbage chars printed after the failure notice.
 
 Now we can restart gdb, patch the debugging check (I'm sure that part is scriptable but it's only one line here,) set a breakpoint on sub_11218 ("break *0x11218"), then each time it's hit, we can print the bytes pointed to by r3, feed them into our decryption function, and see if we get anything intelligible.
 
