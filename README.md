@@ -110,7 +110,7 @@ Looks like we're in the right place
 (gdb) print $r3
 $1 = 1
 ```
-We know the password is wrong.  So if this is our password test branch, then $r3 should be 0 at this comparison to get the correct result
+We know the password is wrong.  So if this is our password test branch, then r3 should be 0 at this comparison to get the correct result
 ```
 (gdb) set $r3 = 0
 (gdb) c
